@@ -65,7 +65,7 @@ model = dict(
                 ),
                 pts_voxel_encoder=dict(
                     type='PillarFeatureNet',
-                    in_channels=5,
+                    in_channels=4,
                     feat_channels=[64, 64],
                     with_distance=False,
                     point_cloud_range=point_cloud_range,

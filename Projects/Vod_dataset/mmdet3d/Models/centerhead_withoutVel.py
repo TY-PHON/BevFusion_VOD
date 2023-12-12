@@ -70,7 +70,7 @@ class CenterHeadWithoutVel(CenterHead):
                 (len(self.class_names[idx]), feature_map_size[1], feature_map_size[0])
             )
 
-            anno_box = gt_bboxes_3d.new_zeros((max_objs, 10), dtype=torch.float32)
+            anno_box = gt_bboxes_3d.new_zeros((max_objs, 8), dtype=torch.float32)
 
             ind = gt_labels_3d.new_zeros((max_objs), dtype=torch.int64)
             mask = gt_bboxes_3d.new_zeros((max_objs), dtype=torch.uint8)
